@@ -11,31 +11,76 @@
     </head>
 
     <body>
+        <div class="container" style="background-color: gray; padding: 50px 0px;">
+            <h1>O Grid System é uma alternativa para o table, muito mais inteligente.</h1>
 
-        <!-- 
-            class:
-                container: Renderiza na tela para que fique ajustado.  
-                container-fluid: organiza o componentes para que fique de acordo com a resolução utilizada.
-        -->
-        <div class="container-fluid">
-            <h1>Containers</h1>
+            <!-- 
+                A primeira coisa que um container precisa é de uma linha, então devemos criar um div row,
+                apos isso devemos criar uma coluna. Se tivermos varias colunas o bootstrap divide automaticamente na tela.
+            -->
 
-            <table class="table table-hover table-striped">
-                <tr>
-                    <th>#</th>
-                    <th>Cursos</th>
-                </tr>
-        
-                <tr>
-                    <td>1</td>
-                    <td>Bootstrap</td>
-                </tr>
-        
-                <tr>
-                    <td>2</td>
-                    <td>Html</td>
-                </tr>
-            </table>
+            <h2>Exemplo de linhas e colunas com a mesma caracteristicas, altura e comprimento.</h2>
+            <div class="row">
+                <div class="col" style="background-color: indianred;">
+                    <p style="color: lavender;">Grid System - Linha 1 Coluna 1</p>
+                </div>
+
+                <div class="col" style="background-color: indigo;">
+                    <p style="color: lavender;">Grid System - Linha 1 Coluna 2</p>
+                </div>
+
+                <div class="col" style="background-color: khaki;">
+                    <p>Grid System - Linha 1 Coluna 3</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col" style="background-color: rgb(206, 19, 19);">
+                    <p style="color: lavender;">Grid System - Linha 2 Coluna 1</p>
+                </div>
+
+                <div class="col" style="background-color: rgb(181, 95, 241);">
+                    <p style="color: lavender;">Grid System - Linha 2 Coluna 2</p>
+                </div>
+
+                <div class="col" style="background-color: rgb(116, 109, 53);">
+                    <p style="color: lavender;">Grid System - Linha 2 Coluna 3</p>
+                </div>
+            </div>
+
+            <br>
+
+            <h2>Exemplo de linhas e colunas com caracteristicas diferentes, comprimento diferente. </h2>
+            <p> Lembrando que a soma das colunas tem que ter no maximo 12, se o tamanho for o mesmo não é  necessario identificado o comprimento, exemplo col-2, col-8, col-2. </p>
+
+            <div class="row">
+                <div class="col-2" style="background-color: indianred;">
+                    <p style="color: lavender;">Grid System - Linha 1 Coluna 1</p>
+                </div>
+
+                <div class="col-8" style="background-color: indigo;">
+                    <p style="color: lavender;">Grid System - Linha 1 Coluna 2</p>
+                </div>
+
+                <div class="col-2" style="background-color: khaki;">
+                    <p>Grid System - Linha 1 Coluna 3</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col" style="background-color: rgb(206, 19, 19);">
+                    <p style="color: lavender;">Grid System - Linha 2 Coluna 1</p>
+                </div>
+
+                <div class="col" style="background-color: rgb(181, 95, 241);">
+                    <p style="color: lavender;">Grid System - Linha 2 Coluna 2</p>
+                </div>
+
+                <div class="col" style="background-color: rgb(116, 109, 53);">
+                    <p style="color: lavender;">Grid System - Linha 2 Coluna 3</p>
+                </div>
+            </div>
+
         </div>
 
         <footer>
